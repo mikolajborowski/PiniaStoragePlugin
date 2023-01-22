@@ -1,0 +1,24 @@
+{
+  "name": "pinia-storage-plugin",
+  "version": "0.0.1",
+  "description": "Simple, 1 file, pinia plugin for local and session storage.",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikolajborowski/PiniaStoragePlugin.git"
+  },
+  "keywords": [],
+  "author": "Mikołaj Borowski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mikolajborowski/PiniaStoragePlugin/issues"
+  },
+  "homepage": "https://github.com/mikolajborowski/PiniaStoragePlugin#readme",
+  "dependencies": {
+    "@vueuse/core": "^9.11.1",
+    "pinia": "^2.0.29"
+  }
+}
