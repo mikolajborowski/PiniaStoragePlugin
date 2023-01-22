@@ -21,7 +21,7 @@ const handleStorage = (
   options.values.forEach((option: string) => {
     let key = `${store.$id}-${option}`;
     if (options.customStorageKey !== undefined) {
-      key = options.customStorageKey;
+      key = options.customStorageKey.replace(/\s/g, '');
     }
 
     const storeValue = get(store.$state, option);
@@ -36,7 +36,7 @@ const handleStorage = (
     options.values.forEach((option) => {
       let key = `${store.$id}-${option}`;
       if (options.customStorageKey !== undefined) {
-        key = options.customStorageKey;
+        key = options.customStorageKey.replace(/\s/g, '');
       }
       const storeValue = get(store.$state, option);
       const storageValue = useStorage(key, storeValue, storageType, {
